@@ -11,6 +11,14 @@ export default function About() {
         engineering it filled all those holes I was trying to create for myself
         in my work and home life.
       </p>
+      <p>
+        Now, as a full stack developer with prior experience as an educator with
+        a history degree, I have a strong interest in combining my passions for
+        global affairs and building beautiful, functional, and easy-to-use
+        applications that matter for people in the here-and-now. My prior
+        experiences and abilities help me build rapport with colleagues and
+        clients from many different places and backgrounds.
+      </p>
     </div>
   );
 }
