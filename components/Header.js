@@ -1,15 +1,15 @@
+import styles from "../styles/Header.module.sass";
 import Link from "next/link";
 
 export default function Header(props) {
   return (
-    <header>
-      <Link href="/">
-        <div>Logo</div>
-      </Link>
+    <header className={styles.header}>
+      <div className={styles.logo}>Logo</div>
       <div>
-        <Link href="/projects">Projects</Link>
-        <Link href="/about">About Me</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/">Home</Link>
+        <Link href="/">Projects</Link>
+        <Link href="/">About</Link>
+        <Link href="/">Contact</Link>
       </div>
     </header>
   );
