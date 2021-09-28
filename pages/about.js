@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div>
-      <p>
+      {/* <p>
         When I was an educator, I found myself doing all sorts of things to
         solve daily problems, even sometimes going so far as to fix problems
         that really didn’t need to be solved. My favorite part of the day was
@@ -18,7 +18,7 @@ export default function About() {
         applications that matter for people in the here-and-now. My prior
         experiences and abilities help me build rapport with colleagues and
         clients from many different places and backgrounds.
-      </p>
+      </p> */}
     </div>
   );
 }

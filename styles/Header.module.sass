@@ -1,5 +1,30 @@
+@mixin sp-layout 
+  @media screen and (max-width: 750px) 
+    @content
+
+
+@mixin pc-layout 
+  @media screen and (min-width: 751px) 
+    @content
+
 .header 
     background: transparent
     width: 100%
     display: flex
     border-bottom: 1px black solid
+    justify-content: center
+
+
+.nav
+    padding: 1.5em
+    display: flex
+
+    @include sp-layout
+        flex-direction: column
+
+    .link
+        padding: 1em
+        cursor: pointer
+    
+    .hover:hover 
+        border-bottom: 1px solid black

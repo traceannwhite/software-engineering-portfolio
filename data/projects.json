@@ -1,34 +1,34 @@
 [
   {
-    "name": "Project 1",
+    "name": "Resonance and Wonder Ecommerce Marketplace",
     "image": "url",
     "slug": "project_1",
     "description": "some description",
-    "live": "http://www.livesite.com",
-    "github": "http://www.github.com/username/projectrepo"
+    "live": "https://resonanceandwonder-project.vercel.app/",
+    "github": "https://github.com/traceannwhite/resonanceandwonder-project"
   },
   {
-    "name": "Project 2",
+    "name": "Travel Agency Application",
     "image": "url",
     "slug": "project_2",
     "description": "some description",
-    "live": "http://www.livesite.com",
-    "github": "http://www.github.com/username/projectrepo"
+    "live": "https://travel-project-roan.vercel.app/",
+    "github": "https://github.com/cjmccaskill/travel-project"
   },
   {
-    "name": "Project 3",
+    "name": "Mint and Magic Shoppe Ecommerce",
     "image": "url",
     "description": "some description",
     "slug": "project_3",
-    "live": "http://www.livesite.com",
-    "github": "http://www.github.com/username/projectrepo"
+    "live": "https://mintandmagicshoppe.vercel.app/",
+    "github": "https://github.com/traceannwhite/mintandmagicshoppe-project"
   },
   {
     "name": "Project 4",
     "image": "url",
     "description": "some description",
     "slug": "project_3",
-    "live": "http://www.livesite.com",
-    "github": "http://www.github.com/username/projectrepo"
+    "live": "https://oneday-frontend.vercel.app/",
+    "github": "https://github.com/traceannwhite/oneday-app_backend"
   }
 ]
