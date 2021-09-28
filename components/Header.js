@@ -7,9 +7,12 @@ export default function Header(props) {
       <div className={styles.logo}>Logo</div>
       <div>
         <Link href="/">Home</Link>
-        <Link href="/">Projects</Link>
-        <Link href="/">About</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/about">About</Link>
+        <Link href="mailto:traceannwhite@gmail.com">Contact</Link>
+        <Link href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf">
+          Resume
+        </Link>
       </div>
     </header>
   );
