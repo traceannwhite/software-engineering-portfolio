@@ -1,33 +1,33 @@
 [
   {
     "name": "Resonance and Wonder Ecommerce Marketplace",
-    "image": "url",
+    "image": "/images/resonanceandwonder.png",
     "slug": "project_1",
-    "description": "some description",
+    "description": "Full-stack solo project built using Next.js, Redux, MongoDB, MongoDB Realm, and CSS.",
     "live": "https://resonanceandwonder-project.vercel.app/",
     "github": "https://github.com/traceannwhite/resonanceandwonder-project"
   },
   {
     "name": "Travel Agency Application",
-    "image": "url",
+    "image": "/images/travelagency.png",
     "slug": "project_2",
-    "description": "some description",
+    "description": "Full-stack application built for mobile with a group od developers using React.js, Sass, Express, Node, and MongoDB.",
     "live": "https://travel-project-roan.vercel.app/",
     "github": "https://github.com/cjmccaskill/travel-project"
   },
   {
     "name": "Mint and Magic Shoppe Ecommerce",
-    "image": "url",
-    "description": "some description",
+    "image": "/images/mintandmagic.png",
+    "description": "Front-end development build out using HTML, CSS, and JavaScript.",
     "slug": "project_3",
     "live": "https://mintandmagicshoppe.vercel.app/",
     "github": "https://github.com/traceannwhite/mintandmagicshoppe-project"
   },
   {
-    "name": "Project 4",
-    "image": "url",
-    "description": "some description",
-    "slug": "project_3",
+    "name": "One Day Book Application",
+    "image": "/images/oneday.png",
+    "description": "Full CRUD application built in 24 hours for adding and removing read books. Built using React.js, Python, and Django.",
+    "slug": "project_4",
     "live": "https://oneday-frontend.vercel.app/",
     "github": "https://github.com/traceannwhite/oneday-app_backend"
   }

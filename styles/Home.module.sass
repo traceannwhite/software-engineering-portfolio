@@ -1,6 +1,59 @@
+.title 
+  text-align: center
+  
+.main 
+  margin: 1em
 
+.headline 
+  text-align: center
+
+.about 
+  text-align: center
+
+.biocontainer
+  display: grid
+  grid-template-columns: 1fr 1fr
+
+  .bio
+    display: flex
+    align-items: center
+    padding: 1em
+    grid-column: 1 / 2
+
+  .biophoto 
+    width: 80%
+    height: 90%
+    border-radius: 50%
+    grid-column: 2 / 3
+    margin: auto
+    min-width: 300px
+
+.tech 
+  padding: 1em
+  text-align: center
+
+.projects
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+
+  .projectcard
+    padding: 1em
+    width: 20em
+  
+  .projectcard:hover
+    border: 1px green solid
+    border-radius: 1em
+
+  .projectimage 
+    width: 100%
 
 @media (max-width: 600px)
   .grid 
     width: 100%
     flex-direction: column
+
+  .biocontainer
+    display: flex
+    flex-direction: column-reverse
+    justify-content: center

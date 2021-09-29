@@ -1,39 +1,56 @@
 import projects from "../data/projects.json";
 import Link from "next/link";
 import Skills from "../components/Skills";
+import styles from "../styles/Home.module.sass";
 
 export default function Home() {
   return (
-    <main>
-      <h3>Hi, my name is Trace,</h3>
-      <h2>and I&aposm a Software Developer.</h2>
-      <div>
-        <h3>About Me</h3>
-        <p>
-          I&apos;m a full-stack software developer with experience as an
-          educator in the U.S. and Japan and a great love affair with world
-          history and literature. I have a passion for combining my unique
-          makeup of talents to bring other&apos;s stories to life through
-          building beautiful, functional, and easy-to-use applications that
-          matter for people in the here-and-now. My aptitude for building
-          rapport and bridges with and between clients, colleagues, and students
-          makes me an excellent additon to any team.
-        </p>
+    <main className={styles.main}>
+      <div className={styles.headline}>
+        <h3 className={styles.title}>Hi, my name is Trace,</h3>
+        <h2>and I&apos;m a Software Developer.</h2>
       </div>
-      <div>
-        <h3>Projects</h3>
-        {projects.map((project, index) => {
-          return (
-            <div key={index}>
-              <Link href={`/projects/${project.slug}`}>{project.name}</Link>
-            </div>
-          );
-        })}
-        <Link href="/projects">See More</Link>
+      <div className={styles.about} id="div_id_1">
+        <div className={styles.biocontainer}>
+          <p className={styles.bio}>
+            I&apos;m a full-stack software developer with experience as an
+            educator in the U.S. and Japan and a great love affair with world
+            history and literature. I have a passion for combining my unique
+            makeup of talents to bring other&apos;s stories to life through
+            building beautiful, functional, and easy-to-use applications that
+            matter for people in the here-and-now. My aptitude for building
+            rapport and bridges with and between clients, colleagues, and
+            students makes me an excellent additon to any team.
+          </p>
+          <img src="/images/TW-photo.jpg" className={styles.biophoto} />
+        </div>
       </div>
-      <div>
-        <h3>Languages, Frameworks, and Technologies</h3>
+      <div className={styles.tech}>
+        <h3 className={styles.title}>
+          Languages, Frameworks, and Technologies
+        </h3>
         <Skills />
+      </div>
+      <div id="div_id_2">
+        <h3 className={styles.title}>Projects</h3>
+        <div className={styles.projects}>
+          {projects.map((project, index) => {
+            return (
+              <div key={index} className={styles.projectcard}>
+                <Link href={`/projects/${project.slug}`}>
+                  <div>
+                    <h3>{project.name}</h3>
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      className={styles.projectimage}
+                    />
+                  </div>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </main>
   );
