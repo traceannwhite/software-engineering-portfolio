@@ -2,10 +2,17 @@
   text-align: center
   
 .main 
-  margin: 1em
+  background-image: url(/images/background-white.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: black
 
 .headline 
   text-align: center
+  padding: 2em 0 1em 0
 
 .about 
   text-align: center
@@ -27,26 +34,45 @@
     grid-column: 2 / 3
     margin: auto
     min-width: 300px
+    // border: 2px solid #dadada
+    // border-radius: 7px
+    border-color: #9ecaed
+    box-shadow: 0 0 10px #9ecaed
+
+  .biophoto:focus
+    // outline: none
+    border-color: #9ecaed
+    box-shadow: 0 0 10px #9ecaed
 
 .tech 
   padding: 1em
+  margin: 1em
   text-align: center
+  background: linear-gradient(to top, black, 50%, black)
+  opacity: 50%
+  border-radius: 1em
+  color: white
 
 .projects
   display: flex
   justify-content: center
   flex-wrap: wrap
+  padding: 1em 0 2em 0
 
   .projectcard
     padding: 1em
-    width: 20em
+    width: 22em
+    border: 1em
   
   .projectcard:hover
-    border: 1px green solid
+    border: 3px silver solid
     border-radius: 1em
 
   .projectimage 
     width: 100%
+    max-height: 250px
+    object-fit: cover
+    border-radius: 1em
 
 @media (max-width: 600px)
   .grid 

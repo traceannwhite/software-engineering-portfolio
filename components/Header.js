@@ -1,46 +1,58 @@
-import styles from "../styles/Header.module.sass";
-import Link from "next/link";
+// import styles from "../styles/Header.module.sass";
+// import Link from "next/link";
+import { useState } from "react";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 
-export default function Header() {
+const Header = (props) => {
+  const [collapsed, setCollapsed] = useState(true);
+
+  const toggleNavbar = () => setCollapsed(!collapsed);
+
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <div className={styles.link}>
-          <Link href="/">
-            <span className={styles.hover}>Home</span>
-          </Link>
-        </div>
-        <div className={styles.link}>
-          <Link href="#div_id_2" className={styles.link}>
-            <span className={styles.hover}>Projects</span>
-          </Link>
-        </div>
-        <div className={styles.link}>
-          <Link href="#div_id_1" className={styles.link}>
-            <span className={styles.hover}>
-              <div>About</div>
-            </span>
-          </Link>
-        </div>
-        <div className={styles.link}>
-          <Link
-            href="mailto:traceannwhite@gmail.com"
-            target="_blank"
-            className={styles.link}
-          >
-            <span className={styles.hover}>Contact</span>
-          </Link>
-        </div>
-        <div className={styles.link}>
-          <Link
-            href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
-            target="_blank"
-            className={styles.link}
-          >
-            <span className={styles.hover}>Resume</span>
-          </Link>
-        </div>
-      </nav>
-    </header>
+    <div>
+      <Navbar color="faded" light>
+        {/* <NavbarBrand href="/" className="mr-auto">
+          reactstrap
+        </NavbarBrand> */}
+        <div></div>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem>
+              <NavLink href="/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#div_id_1">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#div_id_2">Projects</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="mailto:traceannwhite@gmail.com" target="_blank">
+                Contact
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
+                target="_blank"
+              >
+                Resume
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
   );
-}
+};
+
+export default Header;

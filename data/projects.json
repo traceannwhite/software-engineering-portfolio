@@ -8,7 +8,7 @@
     "github": "https://github.com/traceannwhite/resonanceandwonder-project"
   },
   {
-    "name": "Travel Agency Application",
+    "name": "Travel Agency Ecommerce Store",
     "image": "/images/travelagency.png",
     "slug": "project_2",
     "description": "Full-stack application built for mobile with a group od developers using React.js, Sass, Express, Node, and MongoDB.",
@@ -16,7 +16,7 @@
     "github": "https://github.com/cjmccaskill/travel-project"
   },
   {
-    "name": "Mint and Magic Shoppe Ecommerce",
+    "name": "Mint and Magic Shoppe Ecommerce Store",
     "image": "/images/mintandmagic.png",
     "description": "Front-end development build out using HTML, CSS, and JavaScript.",
     "slug": "project_3",
@@ -24,7 +24,7 @@
     "github": "https://github.com/traceannwhite/mintandmagicshoppe-project"
   },
   {
-    "name": "One Day Book Application",
+    "name": "One Day Book Tracker Application",
     "image": "/images/oneday.png",
     "description": "Full CRUD application built in 24 hours for adding and removing read books. Built using React.js, Python, and Django.",
     "slug": "project_4",

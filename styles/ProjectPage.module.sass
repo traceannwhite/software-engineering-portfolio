@@ -2,6 +2,15 @@
     display: flex
     flex-direction: column
     justify-content: center
+    background-image: url(/images/background-white.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100%
+    height: 100%
+    overflow: hidden
+    color: black
+    text-align: center
+    padding: 1em
 
     .details 
         display: flex
@@ -11,9 +20,23 @@
         margin: auto
         padding: 1em
 
-        .img
-            box-shadow: 1px solid black
-            
+    .description 
+        background-color: white
+        width: 90%
+        border-radius: 1em
+        padding: 1em
+
+
+    .img
+        width: 90%
+        border-radius: 1em
+        box-shadow: .2em .2em black
+
     .buttons
         display: flex
-        justify-content: space-around
+        justify-content: center
+        margin: 1em
+
+    .button
+        border-radius: 1em
+        margin: 1em
