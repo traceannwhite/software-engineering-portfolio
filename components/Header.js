@@ -1,4 +1,4 @@
-// import styles from "../styles/Header.module.sass";
+import styles from "../styles/Header.module.sass";
 // import Link from "next/link";
 import { useState } from "react";
 import {
@@ -27,16 +27,26 @@ const Header = (props) => {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink href="/" className={styles.links}>
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#div_id_1">About</NavLink>
+              <NavLink href="#div_id_1" className={styles.links}>
+                About
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#div_id_2">Projects</NavLink>
+              <NavLink href="#div_id_2" className={styles.links}>
+                Projects
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="mailto:traceannwhite@gmail.com" target="_blank">
+              <NavLink
+                href="mailto:traceannwhite@gmail.com"
+                target="_blank"
+                className={styles.links}
+              >
                 Contact
               </NavLink>
             </NavItem>
@@ -44,6 +54,7 @@ const Header = (props) => {
               <NavLink
                 href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
                 target="_blank"
+                className={styles.links}
               >
                 Resume
               </NavLink>
