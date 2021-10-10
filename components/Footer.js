@@ -1,12 +1,12 @@
 import styles from "../styles/Footer.module.sass";
 import Link from "next/link";
-import { MdEmail } from "react-icons/md";
-import { SiLinkedin, SiGithub } from "react-icons/si";
+// import { MdEmail } from "react-icons/md";
+// import { SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.social}>
+      {/* <div className={styles.social}>
         <Link href="mailto:traceannwhite@gmail.com" target="_blank">
           <MdEmail />
         </Link>
@@ -16,7 +16,7 @@ export default function Footer() {
         <Link href="https://github.com/traceannwhite" target="_blank">
           <SiGithub />
         </Link>
-      </div>
+      </div> */}
       <p className={styles.copyright}>
         All rights reservered - Trace White {new Date().getFullYear()}
       </p>

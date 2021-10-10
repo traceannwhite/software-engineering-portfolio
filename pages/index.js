@@ -2,6 +2,8 @@ import projects from "../data/projects.json";
 import Link from "next/link";
 import Skills from "../components/Skills";
 import styles from "../styles/Home.module.sass";
+import { MdEmail } from "react-icons/md";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -9,6 +11,17 @@ export default function Home() {
       <div className={styles.headline}>
         <h3 className={styles.title}>Hi, my name is Trace,</h3>
         <h2>and I&apos;m a Software Developer.</h2>
+      </div>
+      <div className={styles.social}>
+        <Link href="mailto:traceannwhite@gmail.com" target="_blank">
+          <MdEmail className={styles.socialicon} />
+        </Link>
+        <Link href="https://www.linkedin.com/in/tracewhite/" target="_blank">
+          <SiLinkedin className={styles.socialicon} />
+        </Link>
+        <Link href="https://github.com/traceannwhite" target="_blank">
+          <SiGithub className={styles.socialicon} />
+        </Link>
       </div>
       <div className={styles.about} id="div_id_1">
         <div className={styles.biocontainer}>
@@ -38,8 +51,8 @@ export default function Home() {
             return (
               <div key={index} className={styles.projectcard}>
                 <Link href={`/projects/${project.slug}`}>
-                  <div>
-                    <h3>{project.name}</h3>
+                  <div className={styles.projectinfo}>
+                    <h3 className={styles.projectname}>{project.name}</h3>
                     <img
                       src={project.image}
                       alt={project.name}

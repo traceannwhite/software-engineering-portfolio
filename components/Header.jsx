@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import styles from "../styles/Header.module.sass";
 
 const Header = (props) => {
   // set up useState and set the menu state to closed
@@ -12,11 +13,11 @@ const Header = (props) => {
 
   return (
     <div>
-      <nav>
+      <nav className={styles.nav}>
         <button
           onClick={handleToggle}
           open={menuOpen}
-          // className={styles["menu-button"]}
+          className={styles.menubtn}
         >
           {menuOpen ? (
             "X"
@@ -28,33 +29,34 @@ const Header = (props) => {
             ></img>
           )}
         </button>
-        <ul>
-          <li>
+        <ul className={styles.list}>
+          <li className={styles.item}>
             <Link href="/" onClick={() => hideMenu()} exact>
               Home
             </Link>
           </li>
-          <li>
+          <li className={styles.item}>
             <Link href="/#div_id_1" onClick={() => hideMenu()} exact>
               About
             </Link>
           </li>
-          <li>
+          <li className={styles.item}>
             <Link href="/#div_id_2" onClick={() => hideMenu()} exact>
               Projects
             </Link>
           </li>
-          <li>
+          <li className={styles.item}>
             <Link
               href="mailto:traceannwhite@gmail.com"
               target="_blank"
+              className={styles.link}
               onClick={() => hideMenu()}
               exact
             >
               Contact
             </Link>
           </li>
-          <li>
+          <li className={styles.item}>
             <Link
               href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
               target="_blank"
@@ -68,10 +70,16 @@ const Header = (props) => {
       </nav>
 
       <style jsx>
-        {`nav ul {
-            display: ${menuOpen ? "flex" : "none"};`}
+        {`
+          nav ul {
+            position: ${menuOpen ? "absolute" : "none"};
+            opacity: ${menuOpen ? "1" : "0"};
+            transition: ${menuOpen ? "opacity .4s ease-in-out" : "none"};
+            // transform: ${menuOpen} ? translateX(100%): translateX(-100%);
+          }
+        `}
       </style>
-      <style jsx>
+      {/* <style jsx>
         {`
           nav {
             width: 100%;
@@ -103,12 +111,12 @@ const Header = (props) => {
             font-size: 1.1em;
             padding: 10px;
           }
-          // nav ul li a {
-          //   text-decoration: none;
-          //   color: black;
-          // }
+          a {
+            text-decoration: none;
+            color: black;
+          }
         `}
-      </style>
+      </style> */}
     </div>
   );
 };

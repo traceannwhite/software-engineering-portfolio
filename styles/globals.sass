@@ -7,6 +7,22 @@ a
   text-decoration: none
   color: black
 
+li:hover 
+  text-decoration: underline
+  animation: shake .7s infinite
+  
+  @keyframes shake
+    0% 
+      transform: rotate(-.001turn)
+    25% 
+      transform: rotate(.001turn)
+    50% 
+      transform: rotate(-.001turn)
+    75% 
+      transform: rotate(.001turn)
+    100% 
+      transform: rotate(-.001turn)
+
 button
   border: none
   background-color: black
