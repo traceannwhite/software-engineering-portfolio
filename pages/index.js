@@ -13,15 +13,19 @@ export default function Home() {
         <h1>and I&apos;m a Software Developer.</h1>
       </div>
       <div className={styles.social}>
-        <Link href="mailto:traceannwhite@gmail.com" target="_blank">
+        <a
+          href="mailto:traceannwhite@gmail.com"
+          target="_blank"
+          // relationship="non-opener"
+        >
           <MdEmail className={styles.socialicon} />
-        </Link>
-        <Link href="https://www.linkedin.com/in/tracewhite/" target="_blank">
+        </a>
+        <a href="https://www.linkedin.com/in/tracewhite/" target="_blank">
           <SiLinkedin className={styles.socialicon} />
-        </Link>
-        <Link href="https://github.com/traceannwhite" target="_blank">
+        </a>
+        <a href="https://github.com/traceannwhite" target="_blank">
           <SiGithub className={styles.socialicon} />
-        </Link>
+        </a>
       </div>
       <div className={styles.about} id="div_id_1">
         <div className={styles.biocontainer}>

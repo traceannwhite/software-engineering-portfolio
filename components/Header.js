@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Link from "next/link";
 import styles from "../styles/Header.module.sass";
 import { RiCloseLine, RiMenu4Fill } from "react-icons/ri";
 
@@ -28,19 +27,34 @@ const Header = (props) => {
         </button>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Link href="/" onClick={() => hideMenu()} exact>
+            <a
+              href="/"
+              className={styles.link}
+              onClick={() => hideMenu()}
+              exact
+            >
               Home
-            </Link>
+            </a>
           </li>
           <li className={styles.item}>
-            <Link href="/#div_id_1" onClick={() => hideMenu()} exact>
+            <a
+              href="/#div_id_1"
+              className={styles.link}
+              onClick={() => hideMenu()}
+              exact
+            >
               About
-            </Link>
+            </a>
           </li>
           <li className={styles.item}>
-            <Link href="/#div_id_2" onClick={() => hideMenu()} exact>
+            <a
+              href="/#div_id_2"
+              className={styles.link}
+              onClick={() => hideMenu()}
+              exact
+            >
               Projects
-            </Link>
+            </a>
           </li>
           <li className={styles.item}>
             <a
@@ -48,7 +62,7 @@ const Header = (props) => {
               target="_blank"
               className={styles.link}
               onClick={() => hideMenu()}
-              exact
+              exact="true"
             >
               Contact
             </a>
@@ -57,8 +71,9 @@ const Header = (props) => {
             <a
               href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
               target="_blank"
+              className={styles.link}
               onClick={() => hideMenu()}
-              exact
+              exact="true"
             >
               Resume
             </a>
