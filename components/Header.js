@@ -70,7 +70,7 @@ const Header = (props) => {
             </Link>
           </li>
           <li className={styles.item}>
-            <Link
+            <a
               href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
               target="_blank"
               rel="noreferrer"
@@ -79,7 +79,7 @@ const Header = (props) => {
               exact="true"
             >
               Resume
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
