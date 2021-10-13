@@ -9,15 +9,15 @@ export default function Project({ project }) {
         <div className={styles.details}>
           <h1>{project.name}</h1>
           <p className={styles.description}>{project.description}</p>
+          <div className={styles.buttons}>
+            <a href={project.live}>
+              <button className={styles.button}>Live Project</button>
+            </a>
+            <a href={project.github}>
+              <button className={styles.button}>Github Repo</button>
+            </a>
+          </div>
           <img src={project.image} alt={project.name} className={styles.img} />
-        </div>
-        <div className={styles.buttons}>
-          <a href={project.live}>
-            <button className={styles.button}>Live Project</button>
-          </a>
-          <a href={project.github}>
-            <button className={styles.button}>Github Repo</button>
-          </a>
         </div>
       </div>
     </main>
