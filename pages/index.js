@@ -39,9 +39,9 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.tech}>
-        <h2 className={styles.title}>
+        <h3 className={styles.title}>
           Languages, Frameworks, and Technologies
-        </h2>
+        </h3>
         <Skills />
       </div>
       <div id="div_id_2">
