@@ -11,12 +11,12 @@ export default function Project({ project }) {
         <div className={styles.details}>
           <p className={styles.description}>{project.description}</p>
           <div className={styles.buttons}>
-            <Link href={project.live}>
+            <a href={project.live}>
               <button className={styles.button}>Live Project</button>
-            </Link>
-            <Link href={project.github}>
+            </a>
+            <a href={project.github}>
               <button className={styles.button}>Github Repo</button>
-            </Link>
+            </a>
           </div>
         </div>
         <img src={project.image} alt={project.name} className={styles.img} />
