@@ -11,7 +11,7 @@
     "name": "Travel Agency Ecommerce Store",
     "image": "/images/travelagency.png",
     "slug": "project_2",
-    "description": "Full-stack application built for mobile with a group od developers using React.js, Sass, Express, Node, and MongoDB.",
+    "description": "Full-stack application built for mobile with a group of developers using React.js, Sass, Express, Node, and MongoDB.",
     "live": "https://travel-project-roan.vercel.app/",
     "github": "https://github.com/cjmccaskill/travel-project"
   },

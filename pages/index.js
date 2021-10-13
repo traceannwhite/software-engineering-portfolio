@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.headline}>
-        <h3 className={styles.title}>Hi, my name is Trace,</h3>
-        <h2>and I&apos;m a Software Developer.</h2>
+        <h2 className={styles.title}>Hi, my name is Trace,</h2>
+        <h1>and I&apos;m a Software Developer.</h1>
       </div>
       <div className={styles.social}>
         <Link href="mailto:traceannwhite@gmail.com" target="_blank">
@@ -39,13 +39,13 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.tech}>
-        <h3 className={styles.title}>
+        <h2 className={styles.title}>
           Languages, Frameworks, and Technologies
-        </h3>
+        </h2>
         <Skills />
       </div>
       <div id="div_id_2">
-        <h3 className={styles.title}>Projects</h3>
+        <h1 className={styles.projectstitle}>Projects</h1>
         <div className={styles.projects}>
           {projects.map((project, index) => {
             return (

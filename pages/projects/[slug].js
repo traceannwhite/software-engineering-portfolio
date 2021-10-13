@@ -1,5 +1,6 @@
 import projects from "../../data/projects.json";
 import styles from "../../styles/ProjectPage.module.sass";
+import Link from "next/link";
 
 // project prop
 export default function Project({ project }) {
@@ -10,15 +11,18 @@ export default function Project({ project }) {
         <div className={styles.details}>
           <p className={styles.description}>{project.description}</p>
           <div className={styles.buttons}>
-            <a href={project.live}>
+            <Link href={project.live}>
               <button className={styles.button}>Live Project</button>
-            </a>
-            <a href={project.github}>
+            </Link>
+            <Link href={project.github}>
               <button className={styles.button}>Github Repo</button>
-            </a>
+            </Link>
           </div>
         </div>
         <img src={project.image} alt={project.name} className={styles.img} />
+      </div>
+      <div className={styles.back}>
+        <Link href="/">Go Back</Link>
       </div>
     </main>
   );
