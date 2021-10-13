@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import styles from "../styles/Header.module.sass";
 import { RiCloseLine, RiMenu4Fill } from "react-icons/ri";
 
@@ -27,37 +28,37 @@ const Header = (props) => {
         </button>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <a
+            <Link
               href="/"
               className={styles.link}
               onClick={() => hideMenu()}
               exact="true"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className={styles.item}>
-            <a
+            <Link
               href="/#div_id_1"
               className={styles.link}
               onClick={() => hideMenu()}
               exact="true"
             >
               About
-            </a>
+            </Link>
           </li>
           <li className={styles.item}>
-            <a
+            <Link
               href="/#div_id_2"
               className={styles.link}
               onClick={() => hideMenu()}
               exact="true"
             >
               Projects
-            </a>
+            </Link>
           </li>
           <li className={styles.item}>
-            <a
+            <Link
               href="mailto:traceannwhite@gmail.com"
               target="_blank"
               rel="noreferrer"
@@ -66,19 +67,19 @@ const Header = (props) => {
               exact="true"
             >
               Contact
-            </a>
+            </Link>
           </li>
           <li className={styles.item}>
-            <a
+            <Link
               href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
               target="_blank"
-              rel="noreferrer" 
+              rel="noreferrer"
               className={styles.link}
               onClick={() => hideMenu()}
               exact="true"
             >
               Resume
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
