@@ -5,9 +5,9 @@ import styles from "../../styles/ProjectPage.module.sass";
 export default function Project({ project }) {
   return (
     <main className={styles.productpage}>
+      <h1>{project.name}</h1>
       <div className={styles.card}>
         <div className={styles.details}>
-          <h1>{project.name}</h1>
           <p className={styles.description}>{project.description}</p>
           <div className={styles.buttons}>
             <a href={project.live}>
@@ -17,8 +17,8 @@ export default function Project({ project }) {
               <button className={styles.button}>Github Repo</button>
             </a>
           </div>
-          <img src={project.image} alt={project.name} className={styles.img} />
         </div>
+        <img src={project.image} alt={project.name} className={styles.img} />
       </div>
     </main>
   );

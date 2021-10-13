@@ -15,27 +15,36 @@
         display: flex
         flex-direction: column
         align-items: center
-        width: 100%
+        width: 85%
+        max-width: 700px
         margin: auto
+        background-color: white
+        border-radius: 1em
 
     .description 
         background-color: white
         width: 100%
-        padding: 1.3em
+        padding: 1em 0 0 0 
         border-radius: 1em
 
-
-    .img
-        width: 90%
-        border-radius: 1em
-        box-shadow: .2em .2em #bce9e5
-        margin: 1em
 
     .buttons
-        display: flex
-        justify-content: center
-        margin: 1em
+        margin: 0 0 1em 
 
     .button
         border-radius: 1em
         margin: 1em
+
+    .img
+        width: 85%
+        border-radius: 1em
+        margin: 1em auto
+        max-width: 500px
+
+
+
+@media (max-width: 500px)
+    .card
+        display: flex
+        flex-direction: column-reverse
+        margin: 0 auto 1em auto
