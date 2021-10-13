@@ -31,7 +31,7 @@ const Header = (props) => {
               href="/"
               className={styles.link}
               onClick={() => hideMenu()}
-              exact
+              exact="true"
             >
               Home
             </a>
@@ -41,7 +41,7 @@ const Header = (props) => {
               href="/#div_id_1"
               className={styles.link}
               onClick={() => hideMenu()}
-              exact
+              exact="true"
             >
               About
             </a>
@@ -51,7 +51,7 @@ const Header = (props) => {
               href="/#div_id_2"
               className={styles.link}
               onClick={() => hideMenu()}
-              exact
+              exact="true"
             >
               Projects
             </a>
@@ -60,6 +60,7 @@ const Header = (props) => {
             <a
               href="mailto:traceannwhite@gmail.com"
               target="_blank"
+              rel="noreferrer"
               className={styles.link}
               onClick={() => hideMenu()}
               exact="true"
@@ -71,6 +72,7 @@ const Header = (props) => {
             <a
               href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
               target="_blank"
+              rel="noreferrer" 
               className={styles.link}
               onClick={() => hideMenu()}
               exact="true"

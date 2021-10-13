@@ -16,14 +16,22 @@ export default function Home() {
         <a
           href="mailto:traceannwhite@gmail.com"
           target="_blank"
-          // relationship="non-opener"
+          rel="noreferrer"
         >
           <MdEmail className={styles.socialicon} />
         </a>
-        <a href="https://www.linkedin.com/in/tracewhite/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/tracewhite/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <SiLinkedin className={styles.socialicon} />
         </a>
-        <a href="https://github.com/traceannwhite" target="_blank">
+        <a
+          href="https://github.com/traceannwhite"
+          target="_blank"
+          rel="noreferrer"
+        >
           <SiGithub className={styles.socialicon} />
         </a>
       </div>
