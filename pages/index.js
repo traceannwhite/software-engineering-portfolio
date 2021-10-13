@@ -25,6 +25,7 @@ export default function Home() {
       </div>
       <div className={styles.about} id="div_id_1">
         <div className={styles.biocontainer}>
+          <img src="/images/TW-photo.jpg" className={styles.biophoto} />
           <p className={styles.bio}>
             I&apos;m a full-stack software developer with experience as an
             educator in the U.S. and Japan and a great love affair with world
@@ -35,7 +36,6 @@ export default function Home() {
             rapport and bridges with and between clients, colleagues, and
             students makes me an excellent additon to any team.
           </p>
-          <img src="/images/TW-photo.jpg" className={styles.biophoto} />
         </div>
       </div>
       <div className={styles.tech}>

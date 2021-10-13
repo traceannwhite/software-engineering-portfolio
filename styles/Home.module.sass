@@ -30,41 +30,40 @@
   text-align: center
 
 .biocontainer
-  display: grid
-  grid-template-columns: 1fr 1fr
+  display: flex
+  flex-direction: column
   margin: auto
   padding: 1em
 
   .bio
     display: flex
-    grid-column: 1 / 2
     text-align: justify
-    margin: 0 auto
-    max-width: 400px
-    min-width: 200px
-    background-color: white
-    padding: 2em
+    margin: auto
+    background-color: transparent
+    color: white
     border-radius: 1em
+    width: 270px
+    height: 385px
+    padding: 1em
 
   .biophoto 
-    width: 80%
-    height: 100%
+    width: 275px
+    height: 375px
     border-radius: 1em
-    grid-column: 2 / 3
     margin: 0 auto
-    min-width: 300px
-    max-width: 400px
     box-shadow: 0 0 20px #ffffff
-    border-radius: 1em
-    padding: 5px
+    border-radius: 1em 
+    padding: 1em
 
 .tech 
   padding: 1em
-  margin: 1em
+  margin: auto
   text-align: center
   background-color: #bce9e5a5
   border-radius: 1em
   color: white
+  width: 270px
+  height: 385px
 
 .projects
   display: flex
@@ -110,15 +109,32 @@
   
 
 
-@media (max-width: 600px)
-  .grid 
-    width: 100%
-    flex-direction: column
+@media (min-width: 750px)
 
   .biocontainer
     display: flex
-    flex-direction: column-reverse
     justify-content: center
+    align-items: center
   
-  .bio
-    padding: 2em 0 .5em 0 
+    .bio
+      padding: 2em 0 .5em 0 
+      width: 500px
+      height: 220px
+    
+  
+  .tech 
+    width: 500px
+    height: 220px
+  
+
+@media (min-width: 1045px)
+  
+  .biocontainer .bio
+      padding: 2em 0 .5em 0 
+      width: 660px
+      height: 200px
+    
+  
+  .tech 
+    width: 660px
+    height: 200px
