@@ -43,7 +43,7 @@ const Header = (props) => {
             </Link>
           </li>
           <li className={styles.item}>
-            <Link
+            <a
               href="mailto:traceannwhite@gmail.com"
               target="_blank"
               className={styles.link}
@@ -51,17 +51,17 @@ const Header = (props) => {
               exact
             >
               Contact
-            </Link>
+            </a>
           </li>
           <li className={styles.item}>
-            <Link
+            <a
               href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
               target="_blank"
               onClick={() => hideMenu()}
               exact
             >
               Resume
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>
