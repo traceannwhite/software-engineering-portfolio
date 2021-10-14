@@ -17,6 +17,9 @@ export default function Home() {
           href="mailto:traceannwhite@gmail.com"
           target="_blank"
           rel="noreferrer"
+          alt="email"
+          role="img"
+          aria-label="Email Icon"
         >
           <MdEmail className={styles.socialicon} />
         </a>
@@ -24,6 +27,9 @@ export default function Home() {
           href="https://www.linkedin.com/in/tracewhite/"
           target="_blank"
           rel="noreferrer"
+          alt="linkedin"
+          role="img"
+          aria-label="LinkedIn Icon"
         >
           <SiLinkedin className={styles.socialicon} />
         </a>
@@ -31,6 +37,9 @@ export default function Home() {
           href="https://github.com/traceannwhite"
           target="_blank"
           rel="noreferrer"
+          alt="github"
+          role="img"
+          aria-label="Github Icon"
         >
           <SiGithub className={styles.socialicon} />
         </a>
