@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.headline}>
-        <h2 className={styles.title}>Hi, my name is Trace,</h2>
+        <h1>Hi, my name is Trace,</h1>
         <h1>and I&apos;m a Software Developer.</h1>
       </div>
       <div className={styles.social}>

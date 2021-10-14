@@ -17,7 +17,7 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "Resonance and Wonder",
+  title: "Trace White - Portfolio",
   keywords:
     "portfolio, software engineer, software developer, front end engineer, full-stack developer, react developer, back end developer, software engineering portfolio, css, javascript, html, react, next, python, django, sass, git",
   description:
