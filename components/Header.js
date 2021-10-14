@@ -19,7 +19,7 @@ const Header = (props) => {
           onClick={handleToggle}
           open={menuOpen}
           className={styles.menubtn}
-          value="navigation button"
+          type="button"
         >
           {menuOpen ? (
             <RiCloseLine className={styles.hamburger} />
