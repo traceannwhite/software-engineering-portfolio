@@ -4,6 +4,7 @@ import Skills from "../components/Skills";
 import styles from "../styles/Home.module.sass";
 import { MdEmail } from "react-icons/md";
 import { SiLinkedin, SiGithub } from "react-icons/si";
+import { RiHaze2Fill } from "react-icons/ri";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
           href="mailto:traceannwhite@gmail.com"
           target="_blank"
           rel="noreferrer"
-          alt="email"
+          alt="Email"
           role="img"
           aria-label="Email Icon"
         >
@@ -27,7 +28,7 @@ export default function Home() {
           href="https://www.linkedin.com/in/tracewhite/"
           target="_blank"
           rel="noreferrer"
-          alt="linkedin"
+          alt="LinkedIn"
           role="img"
           aria-label="LinkedIn Icon"
         >
@@ -37,7 +38,7 @@ export default function Home() {
           href="https://github.com/traceannwhite"
           target="_blank"
           rel="noreferrer"
-          alt="github"
+          alt="Github"
           role="img"
           aria-label="Github Icon"
         >
@@ -46,7 +47,11 @@ export default function Home() {
       </div>
       <div className={styles.about} id="div_id_1">
         <div className={styles.biocontainer}>
-          <img src="/images/TW-photo.jpg" className={styles.biophoto} />
+          <img
+            src="/images/TW-photo.jpg"
+            alt="Photo of Trace"
+            className={styles.biophoto}
+          />
           <p className={styles.bio}>
             I&apos;m a full-stack software developer with experience as an
             educator in the U.S. and Japan and a great love affair with world
@@ -60,9 +65,9 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.tech}>
-        <h3 className={styles.title}>
+        <h1 className={styles.techtitle}>
           Languages, Frameworks, and Technologies
-        </h3>
+        </h1>
         <Skills />
       </div>
       <div id="div_id_2">
@@ -73,7 +78,7 @@ export default function Home() {
               <div key={index} className={styles.projectcard}>
                 <Link href={`/projects/${project.slug}`}>
                   <div className={styles.projectinfo}>
-                    <h3 className={styles.projectname}>{project.name}</h3>
+                    <h2 className={styles.projectname}>{project.name}</h2>
                     <img
                       src={project.image}
                       alt={project.name}
