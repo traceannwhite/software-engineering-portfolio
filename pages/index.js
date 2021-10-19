@@ -1,26 +1,38 @@
 import projects from "../data/projects.json";
 import SocialMedia from "../components/SocialMedia";
-import Bio from "../components/Bio";
+import About from "../components/About";
 import Skills from "../components/Skills";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Home.module.sass";
+import BioPhoto from "../components/BioPhoto";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.headline}>
-        <h1>Hi, my name is Trace,</h1>
-        <h1>and I&apos;m a Software Developer.</h1>
-      </div>
-      <SocialMedia />
-      <div className={styles.about} id="div_id_1">
-        <Bio />
-      </div>
-      <div className={styles.tech}>
-        <h1 className={styles.techtitle}>
-          Languages, Frameworks, and Technologies
-        </h1>
-        <Skills />
+      <div className={styles.firstcontainer}>
+        {/* <img src="/images/background-black.jpg" className={styles.hero} /> */}
+        <div className={styles.content}>
+          <div className={styles.headline}>
+            <h1>TRACE WHITE</h1>
+            <h1>Full-stack Developer</h1>
+          </div>
+          <BioPhoto />
+          <SocialMedia />
+          <div className={styles.biosnippet}>
+            <p>Welcome. </p>
+            <p>
+              I&apos;m a software developer with prior experience as an educator
+              in the U.S. and Japan. I have a passion for building beautiful,
+              functional, and easy-to-use applications that bring stories to
+              life.
+            </p>
+            <p>
+              My aptitude for building rapport with and bridges between clients,
+              colleagues, and students makes me an excellent additon to any
+              team.
+            </p>
+          </div>
+        </div>
       </div>
       <div id="div_id_2">
         <h1 className={styles.projectstitle}>Projects</h1>
@@ -29,6 +41,15 @@ export default function Home() {
             return <ProjectCard project={project} index={index} />;
           })}
         </div>
+      </div>
+      <div className={styles.about} id="div_id_1">
+        <About />
+      </div>
+      <div className={styles.tech}>
+        <h1 className={styles.techtitle}>
+          Languages, Frameworks, and Technologies
+        </h1>
+        <Skills />
       </div>
     </main>
   );

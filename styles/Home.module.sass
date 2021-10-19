@@ -3,19 +3,41 @@
   color: white
 
 .main 
-  background-color: black
-  background-image: url(/images/background-black.jpg)
-  background-size: cover
-  background-repeat: no-repeat
+  background-color: #404143
   width: 100%
   height: 100%
   overflow: hidden
   color: black
 
+
+.content 
+  height: 100vh
+  background-image: url(/images/background-black.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+
 .headline 
   text-align: center
   padding: 2em 0 1em 0
   color: white
+
+.biophotocontainer
+  display: flex
+  flex-direction: column
+  margin: auto
+  padding: 1em
+
+  .biophoto 
+    width: 275px
+    height: 275px
+    border-radius: 50%
+    margin: auto
+    box-shadow: 0 0 20px #ffffff
+    padding: 1em
+    object-fit: cover
+    object-position: 0 0
+    text-align: center
+    opacity: 100%
 
 .social 
   display: flex
@@ -27,36 +49,35 @@
     padding: 1em 2em
     color: white
 
-.about 
+.biosnippet
   text-align: center
+  color: white
+  line-height: 2
+  width: 80vw
+  height: 100vh
+  margin: auto
+  overflow: hidden
+  text-overflow: ellipsis
 
-.biocontainer
+
+.aboutcontainer
   display: flex
   flex-direction: column
   margin: auto
   padding: 1em
 
-  .bio
+  .about
     display: flex
+    flex-direction:  column
     text-align: center
     margin: auto
     background-color: transparent
     color: white
-    border-radius: 1em
-    width: 300px
-    height: 400px
+    // width: 350px
+    // height: 80vh
     padding: 1em
     font-size: 1.1em
     line-height: 1.2em
-
-  .biophoto 
-    width: 275px
-    height: 375px
-    border-radius: 1em
-    margin: 0 auto
-    box-shadow: 0 0 20px #ffffff
-    border-radius: 1em 
-    padding: 1em
 
 .techtitle
   font-size: 1.4em
@@ -70,7 +91,7 @@
   background-color: #bce9e5
   border-radius: 1em
   color: black
-  width: 270px
+  width: 290px
   height: 385px
   line-height: 1.3em
 
@@ -125,32 +146,37 @@
     border-radius: 1em
   
 
+@media (max-width: 420px)
+  .content 
+    height: 100vh
+  .biosnippet
+    display: none
 
 @media (min-width: 750px)
 
-  .biocontainer
+  .aboutcontainer
     display: flex
     justify-content: center
     align-items: center
   
-    .bio
-      padding: 2em 0 .5em 0 
-      width: 500px
-      height: 240px
+    .about
+      padding: 0 0 .5em 0 
+      width: 80vw
+      height: 87vh
     
   
   .tech 
     width: 500px
-    height: 220px
+    height: 22vh
   
 
 @media (min-width: 1045px)
   
-  .biocontainer .bio
+  .aboutcontainer .about
       padding: 2em 0 .5em 0 
-      width: 690px
-      height: 200px
+      width: 80vw
+      height: 65vh
     
   .tech 
-    width: 660px
+    width: 70vw
     height: 200px

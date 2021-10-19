@@ -7,6 +7,7 @@ export default function Skills() {
         HTML | CSS | Sass | JavaScript | Python | jQuery | React.js | Redux |
         Next.js | ReactStrap | Node | Git | Github | Chrome Dev Tools | MongoDB
         | MongoDB Realm | Django | Mongoose | Postman | Oauth | Heroku | Vercel
+        | WordPress
       </p>
     </div>
   );
