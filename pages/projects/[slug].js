@@ -15,14 +15,18 @@ export default function Project({ project }) {
               <button className={styles.button}>Live Project</button>
             </a>
             <a href={project.github} target="_blank" rel="noreferrer">
-              <button className={styles.button}>Github Repo</button>
+              <button className={styles.button}>
+                Github Repo (If Applicable)
+              </button>
             </a>
           </div>
         </div>
         <img src={project.image} alt={project.name} className={styles.img} />
       </div>
       <div className={styles.back}>
-        <Link href="/" className={styles.backtext}>Go Back</Link>
+        <Link href="/" className={styles.backtext}>
+          Go Back
+        </Link>
       </div>
     </main>
   );

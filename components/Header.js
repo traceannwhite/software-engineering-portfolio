@@ -93,9 +93,9 @@ const Header = (props) => {
             opacity: ${menuOpen ? "1" : "0"};
             transition: ${menuOpen ? "opacity .4s ease-in-out" : "none"};
           }
-          nav button {
-            color: ${menuOpen ? "black" : "white"};
-          }
+          // nav button {
+          //   color: ${menuOpen ? "black" : "white"};
+          // }
         `}
       </style>
     </div>
