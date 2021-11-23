@@ -32,7 +32,7 @@ export default function Home() {
         <h1 className={styles.projectstitle}>Projects</h1>
         <div className={styles.projects}>
           {projects.map((project, index) => {
-            return <ProjectCard project={project} index={index} />;
+            return <ProjectCard project={project} key={index} />;
           })}
         </div>
       </div>
