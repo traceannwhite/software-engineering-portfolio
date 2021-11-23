@@ -73,7 +73,7 @@ const Header = (props) => {
           </li>
           <li className={styles.item}>
             <a
-              href="/documents/Trace_White_Full-Stack_Developer_Resume.pdf"
+              href="/documents/Trace_White_Full-Stack_Developer.pdf"
               target="_blank"
               rel="noreferrer"
               className={styles.link}
