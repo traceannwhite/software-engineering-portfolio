@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.firstcontainer}>
-        {/* <img src="/images/background-black.jpg" className={styles.hero} /> */}
         <div className={styles.content}>
           <div className={styles.headline}>
             <h1>TRACE WHITE</h1>
