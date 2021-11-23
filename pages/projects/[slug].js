@@ -22,7 +22,7 @@ export default function Project({ project }) {
         <img src={project.image} alt={project.name} className={styles.img} />
       </div>
       <div className={styles.back}>
-        <Link href="/">Go Back</Link>
+        <Link href="/" className={styles.backtext}>Go Back</Link>
       </div>
     </main>
   );
