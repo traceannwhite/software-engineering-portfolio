@@ -73,9 +73,6 @@
     margin: auto
     background-color: transparent
     color: white
-    // width: 350px
-    // height: 80vh
-    // padding: 1em
     font-size: 1.1em
     line-height: 1.2em
 
@@ -85,15 +82,30 @@
   line-height: 1.3em
 
 .tech 
-  padding: 1em
+  padding: .5em 1em
   margin: 0 auto 1em auto
   text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
   background-color: #2f7aaa
   border-radius: 1em
   color: white
   width: 290px
-  height: 385px
-  line-height: 1.3em
+  height: 400px
+  line-height: 2em
+  overflow-y: scroll
+  .skills
+    line-height: 2em
+
+.tech::-webkit-scrollbar
+  background-color: #2f7aaa
+  border-radius: 0 1em 1em 0
+
+.tech::-webkit-scrollbar-thumb
+  background-color: white
+  border-radius: 1em
+
 
 .projectstitle 
   text-align: center
@@ -149,8 +161,12 @@
 @media (max-width: 420px)
   .content 
     height: 100vh
+    
   .biosnippet
     display: none
+  
+  .aboutcontainer
+    padding: 2em
 
 @media (min-width: 750px)
 
