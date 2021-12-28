@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.sass";
+import styles from "../styles/SocialIcons.module.sass";
 import { MdEmail } from "react-icons/md";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { RiHaze2Fill } from "react-icons/ri";

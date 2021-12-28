@@ -11,7 +11,6 @@ const Header = (props) => {
     setMenuOpen((prev) => !prev);
   };
   const hideMenu = () => setMenuOpen(false);
-
   return (
     <div>
       <nav className={styles.nav}>
@@ -85,7 +84,6 @@ const Header = (props) => {
           </li>
         </ul>
       </nav>
-
       <style jsx>
         {`
           nav ul {
