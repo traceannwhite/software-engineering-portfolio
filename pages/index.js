@@ -5,10 +5,12 @@ import Skills from "../components/Skills";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Home.module.sass";
 import BioPhoto from "../components/BioPhoto";
+import SnowflakesAnimation from "../components/SnowflakesAnimation";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <SnowflakesAnimation />
       <div className={styles.firstcontainer}>
         <div className={styles.content}>
           <div className={styles.headline}>
@@ -36,9 +38,6 @@ export default function Home() {
           })}
         </div>
       </div>
-      <div className={styles.about} id="div_id_1">
-        <About />
-      </div>
       <div className={styles.tech}>
         <h1 className={styles.techtitle}>
           Languages, Frameworks, and Technologies
@@ -48,4 +47,3 @@ export default function Home() {
     </main>
   );
 }
-

@@ -1,17 +1,19 @@
 [
   {
-    "name": "Take Heart Ministries Website Reconfiguration",
+    "name": "Take Heart Ministries",
     "image": "/images/takeheartministries.png",
-    "slug": "thm-webflow-shopify-roconfig",
-    "description": "The website was created in Webflow as a place to display information about her business. The client wished to start selling products on her website and wanted to use Shopify technology. In order to meet the needs of the client, I created a Shopify business account for her business and walked her through how to use the technology once she began taking orders. I then added a new collection in both Webflow and Shopify, designed the display of the new product while matching the existing design, and connected the product display to her Shopify account by embedding and updating the Shopify code. I communicated with the client throughout the process to ensure client satisfation.",
+    "slug": "thm",
+    "short": "Webflow website reconfiguration and Shopify merge.",
+    "description": "The website was orginally created in Webflow as a place to display information about her business. The client wished to start selling products on her website and wanted to use Shopify technology. In order to meet the needs of the client, I created a Shopify business account for her business and walked her through how to use the technology to track and fulfill orders. I then added a new collection in both Webflow and Shopify, designed the display of the new product while matching the existing design, and connected the product display to her Shopify account by embedding and updating the Shopify code. I communicated with the client throughout the process to ensure client satisfation.",
     "tech": ["Webflow", "Shopify", "CSS"],
     "code_snippet": "",
     "live": "https://takeheartministries.faith/"
   },
   {
-    "name": "Resonance and Wonder Ecommerce Marketplace",
+    "name": "Resonance and Wonder",
     "image": "/images/resonanceandwonder.png",
-    "slug": "resonance_and_wonder_marketplace",
+    "slug": "resonance_and_wonder_ecommerce",
+    "short": "A concept project for an ecommerce website selling sustainable products.",
     "description": "This is the first iteration of Resonance and Wonder; an ecommerce marketplace for businesses to sign up and sell their products and for consumers buy them. The difference between this marketplace and any other is that only b-corporation and/or businesses that promote sustainable practices can sell on this marketplace. I created this as a solo project using Next.js, Redux, MongoDB, MongoDB Realm, and CSS. This was my first project using Next.js, MongoDB Realm, and Redux, so there was definitely a learning curve with using so many new technologies at once. However, I was pleased with being able to quickly implement Redux and MongoDB Realm as both technologies have so much to offer for future projects. With only a week, give or take, to complete this project, there are still many features I'd like to add in the 2nd iteration to make it fully functional for businesses and consumers. ",
     "tech": ["Next.js", "CSS", "Redux", "MongoDB", "MongoDB Realm"],
     "code_snippet": "",
@@ -19,9 +21,10 @@
     "github": "https://github.com/traceannwhite/resonanceandwonder-project"
   },
   {
-    "name": "Travel Agency Ecommerce Store",
+    "name": "Travel Agency",
     "image": "/images/travelagency.png",
     "slug": "travel_agency_ecommerce",
+    "short": "A group project travel agency website built for mobile.",
     "description": "Full-stack application built for mobile with a group of developers using React.js, Sass, Express, Node, and MongoDB.",
     "tech": ["React.js", "Sass CSS", "Express", "Node", "MongoDB"],
     "code_snippet": "",
@@ -29,8 +32,9 @@
     "github": "https://github.com/cjmccaskill/travel-project"
   },
   {
-    "name": "Mint and Magic Shoppe Ecommerce Store",
+    "name": "Mint and Magic Shoppe",
     "image": "/images/mintandmagic.png",
+    "short": "An ecommerce website for Mint and Magic candle company.",
     "description": "Front-end development build out using HTML, CSS, and JavaScript.",
     "slug": "mint_and_magic_ecommerce",
     "tech": ["HTML", "CSS", "JavaScript", "Contentful CMS"],
@@ -39,8 +43,9 @@
     "github": "https://github.com/traceannwhite/mintandmagicshoppe-project"
   },
   {
-    "name": "One Day Book Tracker Application",
+    "name": "One Day Book Tracker",
     "image": "/images/oneday.png",
+    "short": "A simple book tracking application for documenting read and unread books.",
     "description": "Full CRUD application built in 24 hours for adding and removing read books. Built using React.js, Python, and Django with minimal styling. As this is the first iteration and my first solo application using Python and Django, there is stil more to come in making this Book Tracker bigger and better.",
     "slug": "book_tracker",
     "tech": ["React.js", "CSS", "Python", "Django", "Material UI"],

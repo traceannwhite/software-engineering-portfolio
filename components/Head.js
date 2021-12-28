@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const Meta = ({ title, keywords, description }) => {
+const Meta = ({ keywords, description }) => {
   return (
     <Head>
       <meta
@@ -17,7 +17,6 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "Trace White - Portfolio",
   keywords:
     "portfolio, software engineer, software developer, front end engineer, full-stack developer, react developer, back end developer, software engineering portfolio, css, javascript, html, react, next, python, django, sass, git",
   description:

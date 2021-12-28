@@ -1,0 +1,52 @@
+.container 
+  margin: 1em 2em 0
+  display: flex
+  flex-direction: column
+  background: #7b8eed
+  width: fit-content
+  max-width: 400px
+
+  .display 
+    min-height: 215px
+    background-size: cover
+    min-width: 300px
+    margin: auto
+    display: flex
+    justify-content: center
+    box-shadow: 0 0 15px 10px #7b8eed inset
+
+    .image 
+      width: 166px
+      height: 105px
+      margin: auto
+      background-size: cover
+    
+  
+
+  .details 
+    display: flex
+    flex-direction: column
+    height: 300px
+    max-height: 300px
+
+    .name,
+    .short 
+      text-align: center
+      line-height: 1.2
+    
+  
+
+@media (min-width: 720px)
+  .container 
+    flex-direction: row
+    min-width: 615px
+    margin: 2em 1em 0
+
+
+  .details 
+    display: flex
+    justify-content: center
+
+    .name,
+    .short 
+      text-align: left !important
