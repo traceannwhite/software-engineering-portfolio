@@ -1,4 +1,4 @@
-import styles from "../styles/Home.module.sass";
+import styles from "../styles/BioPhoto.module.sass";
 
 const BioPhoto = () => {
   return (

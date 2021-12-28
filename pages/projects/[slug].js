@@ -10,7 +10,7 @@ export default function Project({ project }) {
       <div className={styles.card}>
         <div className={styles.details}>
           <p className={styles.description}>{project.description}</p>
-          <div className={styles.buttons}>
+          {/* <div className={styles.buttons}>
             <a href={project.live} target="_blank" rel="noreferrer">
               <button className={styles.button}>Live Project</button>
             </a>
@@ -19,7 +19,7 @@ export default function Project({ project }) {
                 Github Repo (If Applicable)
               </button>
             </a>
-          </div>
+          </div> */}
         </div>
         <img src={project.image} alt={project.name} className={styles.img} />
       </div>
