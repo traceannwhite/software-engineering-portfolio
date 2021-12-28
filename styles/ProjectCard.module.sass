@@ -5,6 +5,7 @@
   background: #7b8eed
   width: fit-content
   max-width: 400px
+  max-height: 450px
 
   .display 
     min-height: 215px
@@ -12,7 +13,6 @@
     min-width: 300px
     margin: auto
     display: flex
-    justify-content: center
     box-shadow: 0 0 15px 10px #7b8eed inset
 
     .image 
@@ -26,8 +26,16 @@
   .details 
     display: flex
     flex-direction: column
+    justify-content: center
     height: 300px
     max-height: 300px
+    padding: 0 1em
+
+    .name 
+      font-size: 1.25em
+
+    .short
+      font-size: .9em
 
     .name,
     .short 
