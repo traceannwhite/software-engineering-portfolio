@@ -38,7 +38,7 @@ const Header = (props) => {
               Home
             </Link>
           </li>
-          <li className={styles.item}>
+          {/* <li className={styles.item}>
             <Link
               href="/#div_id_1"
               className={styles.link}
@@ -47,7 +47,7 @@ const Header = (props) => {
             >
               About
             </Link>
-          </li>
+          </li> */}
           <li className={styles.item}>
             <Link
               href="/#div_id_2"
@@ -72,7 +72,7 @@ const Header = (props) => {
           </li>
           <li className={styles.item}>
             <a
-              href="/documents/Trace_White_Full-Stack_Developer.pdf"
+              href="https://docs.google.com/document/d/1t7WHnbzgjDA66EHzvlYoFCy6DbNCaojW1JT_CD1TTxQ/edit"
               target="_blank"
               rel="noreferrer"
               className={styles.link}
