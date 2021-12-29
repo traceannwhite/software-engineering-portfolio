@@ -25,12 +25,6 @@ export default function Home() {
           })}
         </div>
       </div>
-      {/* <div className={styles.tech}>
-        <h1 className={styles.techtitle}>
-          Languages, Frameworks, and Technologies
-        </h1>
-        <Skills />
-      </div> */}
     </main>
   );
 }

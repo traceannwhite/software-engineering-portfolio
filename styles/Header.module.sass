@@ -3,14 +3,16 @@
     width: 100%
     height: 100px
     background: linear-gradient(#7b8eed, #49517e)
-    position: sticky
+    position: fixed
+    top: 0
+    z-index: 20
 
 
     .menubtn 
         background-color: transparent
         color: white
         z-index: 13
-        position: fixed
+        position: absolute
 
         .hamburger 
             width: 30px
@@ -18,7 +20,7 @@
             
     .list
         flex-direction: column
-        position: absolute
+        position: relative
         list-style: none
         padding: 10px 1em 1em 3em
         text-transform: uppercase
