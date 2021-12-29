@@ -7,7 +7,8 @@
     "description": "The website was orginally created in Webflow as a place to display information about her business. The client wished to start selling products on her website and wanted to use Shopify technology. In order to meet the needs of the client, I created a Shopify business account for her business and walked her through how to use the technology to track and fulfill orders. I then added a new collection in both Webflow and Shopify, designed the display of the new product while matching the existing design, and connected the product display to her Shopify account by embedding and updating the Shopify code. I communicated with the client throughout the process to ensure client satisfation.",
     "tech": ["Webflow", "Shopify", "CSS"],
     "code_snippet": "",
-    "live": "https://takeheartministries.faith/"
+    "liveUrl": "https://takeheartministries.faith/",
+    "githubUrl": ""
   },
   {
     "name": "Resonance and Wonder",
@@ -17,8 +18,8 @@
     "description": "This is the first iteration of Resonance and Wonder; an ecommerce marketplace for businesses to sign up and sell their products and for consumers buy them. The difference between this marketplace and any other is that only b-corporation and/or businesses that promote sustainable practices can sell on this marketplace. I created this as a solo project using Next.js, Redux, MongoDB, MongoDB Realm, and CSS. This was my first project using Next.js, MongoDB Realm, and Redux, so there was definitely a learning curve with using so many new technologies at once. However, I was pleased with being able to quickly implement Redux and MongoDB Realm as both technologies have so much to offer for future projects. With only a week, give or take, to complete this project, there are still many features I'd like to add in the 2nd iteration to make it fully functional for businesses and consumers. ",
     "tech": ["Next.js", "CSS", "Redux", "MongoDB", "MongoDB Realm"],
     "code_snippet": "",
-    "live": "https://resonanceandwonder-project.vercel.app/",
-    "github": "https://github.com/traceannwhite/resonanceandwonder-project"
+    "liveUrl": "https://resonanceandwonder-project.vercel.app/",
+    "githubUrl": "https://github.com/traceannwhite/resonanceandwonder-project"
   },
   {
     "name": "Travel Agency",
@@ -28,8 +29,8 @@
     "description": "Full-stack application built for mobile with a group of developers using React.js, Sass, Express, Node, and MongoDB.",
     "tech": ["React.js", "Sass CSS", "Express", "Node", "MongoDB"],
     "code_snippet": "",
-    "live": "https://travel-project-roan.vercel.app/",
-    "github": "https://github.com/cjmccaskill/travel-project"
+    "liveUrl": "https://travel-project-roan.vercel.app/",
+    "githubUrl": "https://github.com/cjmccaskill/travel-project"
   },
   {
     "name": "Mint and Magic Shoppe",
@@ -39,8 +40,8 @@
     "slug": "mint_and_magic_ecommerce",
     "tech": ["HTML", "CSS", "JavaScript", "Contentful CMS"],
     "code_snippet": "",
-    "live": "https://mintandmagicshoppe.vercel.app/",
-    "github": "https://github.com/traceannwhite/mintandmagicshoppe-project"
+    "liveUrl": "https://mintandmagicshoppe.vercel.app/",
+    "githubUrl": "https://github.com/traceannwhite/mintandmagicshoppe-project"
   },
   {
     "name": "One Day Book Tracker",
@@ -50,7 +51,7 @@
     "slug": "book_tracker",
     "tech": ["React.js", "CSS", "Python", "Django", "Material UI"],
     "code_snippet": "",
-    "live": "https://oneday-frontend.vercel.app/",
-    "github": "https://github.com/traceannwhite/oneday-app_backend"
+    "liveUrl": "https://oneday-frontend.vercel.app/",
+    "githubUrl": "https://github.com/traceannwhite/oneday-app_backend"
   }
 ]

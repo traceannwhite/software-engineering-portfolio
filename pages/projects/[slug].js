@@ -1,25 +1,21 @@
 import projects from "../../data/projects.json";
 import styles from "../../styles/ProjectPage.module.sass";
 import Link from "next/link";
+import LiveLink from "../../components/LiveLink";
+import GithubLink from "../../components/GithubLink";
 
 // project prop
 export default function Project({ project }) {
   return (
     <main className={styles.productpage}>
       <h1>{project.name}</h1>
+      <div className={styles.links}>
+        <LiveLink project={project} />
+        <GithubLink project={project} />
+      </div>
       <div className={styles.card}>
         <div className={styles.details}>
           <p className={styles.description}>{project.description}</p>
-          {/* <div className={styles.buttons}>
-            <a href={project.live} target="_blank" rel="noreferrer">
-              <button className={styles.button}>Live Project</button>
-            </a>
-            <a href={project.github} target="_blank" rel="noreferrer">
-              <button className={styles.button}>
-                Github Repo (If Applicable)
-              </button>
-            </a>
-          </div> */}
         </div>
         <img src={project.image} alt={project.name} className={styles.img} />
       </div>
