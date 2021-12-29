@@ -4,6 +4,8 @@
   height: 100%
   overflow: hidden
   color: black
+  animation: fadein 2s ease-in-out 
+
 
 .firstcontainer 
   background-color: #7b8eed
@@ -21,6 +23,14 @@
   flex-wrap: wrap
   margin: 0 0 2em 0
 
+
+//opacity fade in
+@keyframes fadein 
+  0% 
+    filter: opacity(20%)
+  100% 
+    filter: opacity(100%)
+  
 
 @media (max-width: 420px)
   .content 
