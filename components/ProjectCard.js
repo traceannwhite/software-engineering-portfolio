@@ -6,6 +6,16 @@ const ProjectCard = ({ project, index }) => {
     <div key={index} className={styles.recentwork}>
       <Link href={`/projects/${project.slug}`}>
         <div className={styles.container}>
+          <ul className={styles.dots}>
+            <li className={styles.dot}></li>
+            <li className={styles.dot}></li>
+            <li className={styles.dot}></li>
+            <li className={styles.dot}></li>
+            <li className={styles.dot}></li>
+            <li className={styles.dot}></li>
+            <li className={styles.dot}></li>
+            <li className={styles.dot}></li>
+          </ul>
           <div
             className={styles.display}
             style={{
