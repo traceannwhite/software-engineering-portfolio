@@ -1,0 +1,59 @@
+
+.icons
+    display: flex
+    justify-content: center
+    position: relative
+    
+    .icon 
+        font-size: 1.5rem
+        position: absolute
+        top: -80px
+        padding-bottom: 300px
+        transform-origin: bottom center
+        animation: grow 1s
+        animation-fill-mode: forwards
+        
+    
+    #icon1
+        transform: rotate(-170deg)
+    #icon2
+        transform: rotate(-146.4deg)
+    #icon3
+        transform: rotate(-123.8deg)
+    #icon4
+        transform: rotate(-101.2deg)
+    #icon5
+        transform: rotate(-78.6deg)
+    #icon6
+        transform: rotate(-56deg)
+    #icon7
+        transform: rotate(-33.4deg)
+    #icon8
+        transform: rotate(-10.8deg)
+    #icon9
+        transform: rotate(11.8deg)
+    #icon10
+        transform: rotate(34.4deg)
+    #icon11
+        transform: rotate(57deg)
+    #icon12
+        transform: rotate(79.6deg)
+    #icon13
+        transform: rotate(102.2deg)
+    #icon14
+        transform: rotate(124.8deg)
+    #icon15
+        transform: rotate(147.4deg)
+    #icon16
+        transform: rotate(170deg)
+
+
+@keyframes grow
+    0% 
+        font-size: 0
+    100% 
+        font-size: 1.5em
+
+@media (max-width: 767px)
+  .icons
+    display: none

@@ -1,18 +1,19 @@
 import projects from "../data/projects.json";
 import SocialMedia from "../components/SocialMedia";
 import About from "../components/About";
-import Skills from "../components/Skills";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Home.module.sass";
 import BioPhoto from "../components/BioPhoto";
 import SnowflakesAnimation from "../components/SnowflakesAnimation";
 import Introduction from "../components/Introduction";
+import HeroIcons from "../components/HeroIcons";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <SnowflakesAnimation />
       <div className={styles.firstcontainer}>
+        <HeroIcons />
         <Introduction className={styles.introduction} />
         <SocialMedia />
       </div>

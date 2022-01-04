@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/ProjectCard.module.sass";
+import { BsDot } from "react-icons/bs";
 
 const ProjectCard = ({ project, index }) => {
   return (
@@ -7,14 +8,42 @@ const ProjectCard = ({ project, index }) => {
       <Link href={`/projects/${project.slug}`}>
         <div className={styles.container}>
           <ul className={styles.dots}>
-            <li className={styles.dot}></li>
-            <li className={styles.dot}></li>
-            <li className={styles.dot}></li>
-            <li className={styles.dot}></li>
-            <li className={styles.dot}></li>
-            <li className={styles.dot}></li>
-            <li className={styles.dot}></li>
-            <li className={styles.dot}></li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
+            <li className={styles.dot}>
+              <BsDot />
+            </li>
           </ul>
           <div
             className={styles.display}

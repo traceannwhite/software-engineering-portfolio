@@ -3,12 +3,14 @@
   background-position: center;
   text-align: center;
   letter-spacing: 1px;
+  position: relative;
 }
 
 .intro {
   font-size: 2rem;
   margin: 0;
-  text-shadow: 3px 2px 3px #ffffff;
+  color: #4c5684;
+  text-shadow: 3px 2px 3px #b5a1a1;
 }
 
 .box {
@@ -34,7 +36,7 @@
       line-height: 45px;
       margin: 0;
       color: #000000;
-      text-shadow: 2px 1px 4px #ffffff;
+      text-shadow: 2px 1px 4px #ac95b7;
     }
   }
 }
