@@ -12,10 +12,10 @@
 
   .dots 
     position: absolute
-    top: -5px
-    left: 100px
     list-style-type: none
     color: white
+    top: -5px
+    left: 100px
 
   .display 
     min-height: 215px
@@ -60,7 +60,6 @@
     min-width: 615px
     margin: 2em 1em 0
 
-
   .details 
     display: flex
     justify-content: center
@@ -68,3 +67,28 @@
     .name,
     .short 
       text-align: left !important
+
+@media (max-width: 720px)
+  .dots
+    top: -9px !important
+    left: 150px !important
+
+    .dot:nth-of-type(9)
+      display: none
+    .dot:nth-of-type(10)
+      display: none
+  
+  .display 
+    padding: 20px
+
+    .image
+      width: 188.5px !important
+      height: 130px !important
+
+  .details 
+    justify-content: flex-start !important
+
+@media (max-width: 485px)
+  .dots
+    display: none
+
