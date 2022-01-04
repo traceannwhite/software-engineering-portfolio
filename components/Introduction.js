@@ -4,7 +4,7 @@ import BioPhoto from "./BioPhoto";
 const Introduction = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.intro}>Hi, I'm Trace</h2>
+      <h2 className={styles.intro}>Hi, I&apos;m Trace</h2>
       <BioPhoto />
       <div className={styles.box}>
         <ul className={styles.list}>
