@@ -1,9 +1,12 @@
 import styles from "../styles/Introduction.module.scss";
 import BioPhoto from "./BioPhoto";
+import SocialMedia from "./SocialMedia";
+import HeroIcons from "./HeroIcons";
 
 const Introduction = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
+      <HeroIcons />
       <h2 className={styles.intro}>Hi, I&apos;m Trace</h2>
       <BioPhoto />
       <div className={styles.box}>
@@ -15,6 +18,7 @@ const Introduction = () => {
         </ul>
       </div>
       <p>based in Oklahoma City, OK.</p>
+      <SocialMedia />
     </div>
   );
 };
